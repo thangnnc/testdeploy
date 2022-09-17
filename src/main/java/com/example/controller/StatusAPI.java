@@ -8,7 +8,7 @@ import java.util.HashMap;
 @RestController
 public class StatusAPI {
 
-    @GetMapping("/status")
+    @GetMapping("/api/status")
     public HashMap doGetStatus(){
         HashMap<String, String> response = new HashMap<>();
         response.put("Status", "Running");
