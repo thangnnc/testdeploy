@@ -1,0 +1,3 @@
+com\example\TestDeployApplication.class
+com\example\ServletInitializer.class
+com\example\controller\StatusAPI.class
