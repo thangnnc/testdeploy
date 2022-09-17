@@ -27,8 +27,9 @@ jobs:
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
-          name: java-app
-          path: '${{ github.workspace }}/target/*.jar'
+          name: bundle
+          path: build
+          if-no-files-found: error
 
   deploy:
     runs-on: windows-latest
